@@ -49,6 +49,7 @@
 	let progress = $state([0, 0, 0, 0, 0, 0]);
 	let mainContentEl = $state(/** @type {HTMLElement|null} */ (null));
 	let mainOffset = $state(0);
+	let mainVisible = $state(false);
 
 	onMount(() => {
 		const sections = document.querySelectorAll('section.scene');
@@ -70,6 +71,18 @@
 
 		window.addEventListener('scroll', onScroll, { passive: true });
 		onScroll();
+		const observer = new IntersectionObserver(
+			([entry]) => {
+				mainVisible = entry.isIntersecting;
+			},
+			{ threshold: 0 }
+		);
+		if (mainContentEl) observer.observe(mainContentEl);
+
+		return () => {
+			window.removeEventListener('scroll', onScroll);
+			observer.disconnect(); // ← return 里也要加
+		};
 
 		return () => window.removeEventListener('scroll', onScroll);
 	});
@@ -109,7 +122,7 @@
 </section>
 
 <!-- 固定照片层 -->
-<div class="photo-stack">
+<div class="photo-stack" style="visibility: {mainVisible ? 'hidden' : 'visible'};">
 	{#each scenes as scene, i}
 		<img src={scene.image} alt="" style="opacity: {photoOpacity(i)}; z-index: {i};" />
 	{/each}
@@ -118,7 +131,7 @@
 <!-- 滚动层 -->
 {#each scenes as scene, i}
 	<section class="scene">
-		<div class="sticky-wrap">
+		<div class="sticky-wrap" style="visibility: {mainVisible ? 'hidden' : 'visible'};">
 			<div class="text-box">
 				<p>{@html scene.text}</p>
 			</div>
@@ -484,11 +497,10 @@
 		line-height: 1rem;
 	}
 
-	.footer {
-		height: 100vh;
+	/* .footer {
+		height: 1000vh;
 		width: 100%;
-		/* background: #13062b; */
 		background: pink;
-		transform: translateY(-80vh);
-	}
+		transform: translateY(-100vh);
+	} */
 </style>
