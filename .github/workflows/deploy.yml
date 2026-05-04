@@ -27,6 +27,6 @@ jobs:
           CI: false
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./my-app/dist
+          path: ./my-app/build
       - id: deployment
         uses: actions/deploy-pages@v4
