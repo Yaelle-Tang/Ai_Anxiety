@@ -17,32 +17,32 @@
 		{
 			id: 1,
 			image: photo1,
-			text: 'On the evening of March 19th, Heisenberg sat down to install a piece of software that had, by then, captivated much of the Chinese internet. He gave himself 15 minutes. <mark>Five hours later, he was still trying.</mark>'
+			text: 'On the evening of March 19, a man who goes by "Heisenberg" sat down to install a new piece of software called OpenClaw that had captivated much of the Chinese internet.'
 		},
 		{
 			id: 2,
 			image: photo2,
-			text: "DeepSeek's step-by-step guide had estimated <mark>15 to 20 minutes</mark>. What followed was something else. Each completed step produced a new error. Each new attempt, the same."
+			text: "Step-by-step guides had estimated it was a simple process that would take no longer than <mark>15 to 20 minutes</mark>. But, what followed was something else. Each completed step produced a new error. Each new attempt, more issues."
 		},
 		{
 			id: 3,
 			image: photo3,
-			text: '\u201cEvery time it told me I was just one step away,\u201d he said. \u201cThen it would be wrong. So I\u2019d try again, still wrong, until all the enthusiasm was gone.\u201d He had been, he said, psychologically worn down by an AI. <mark>Like Sisyphus.</mark>'
+			text: '\u201cEvery time it told me I was just one step away,\u201d he said. \u201cThen he would get another error. So I\u2019d try again, <mark>still errors, until he was completely deflated.</mark>'
 		},
 		{
 			id: 4,
 			image: photo4,
-			text: 'He gave up and opened Xianyu, China\u2019s secondhand marketplace. For 9.9 CNY (about 1.25 USD) a stranger remotely accessed his machine and fixed the gateway configuration in minutes.'
+			text: 'He gave up and opened Xianyu, a Chinese secondhand marketplace for hiring help. For 9.9 CNY (about 1.25 USD) a stranger remotely accessed his machine and fixed the gateway configuration in minutes.'
 		},
 		{
 			id: 5,
 			image: photo5,
-			text: `Two days later, Heisenberg asked the tool to delete a third-party iPhone management app. <mark>Instead, it wiped nearly everything on his C drive, including itself.</mark> He posted about it on Rednote: \u201cSuicidal lobster! Wiped the entire C drive, including the lobster itself.\u201d He wasn\u2019t particularly upset. \u201c10% angry at its stupidity,\u201d he said. <mark>\u201c90% shocked that it could actually do that to a computer.\u201d</mark>`
+			text: `Two days later, <mark>OpenClaw wiped nearly everything on his drive, including OpenClaw itself.</mark> He posted about it on Rednote, referring to the software by its lobster mascot: \u201cSuicidal lobster! Wiped the entire C drive, including the lobster itself.\u201d I'm \u201c10% angry at my stupidity,\u201d he said. <mark>And \u201c90% shocked that it could actually do that to a computer.\u201d</mark>`
 		},
 		{
 			id: 6,
 			image: photo6,
-			text: `He reinstalled the same day. And when the new agent came online, he explained, at some length, the history of its predecessor. \u201cThis is the age of great voyages,\u201d he said. <mark>\u201cThe Wild West gold rush. Who\u2019s thinking about privacy right now?\u201d</mark>`
+			text: `Still, he reinstalled the software. \u201cThis is the age of great voyages,\u201d he said. <mark>\u201cThe Wild West gold rush. Who\u2019s thinking about privacy right now?\u201d</mark>`
 		}
 	];
 
@@ -113,9 +113,7 @@
 	<img src={cover} alt="cover" />
 	<div class="cover-text">
 		<h1 class="jersey-15-regular">
-			China AI Gold Rush, <br /> everyone wants to get on the table <br /><mark
-				>But... At what costs?</mark
-			>
+			China's AI Gold Rush: <br /> Everyone wants wants a piece, <br /><mark>but, at what cost?</mark>
 		</h1>
 		<p class="cover-byline">By Yaelle Tang · May 4,2026</p>
 	</div>
@@ -151,25 +149,26 @@
 			<mark>The Wild AI Gold Rush</mark>
 		</h2>
 		<p>
-			OpenClaw, the tool Heisenberg spent five hours trying to install, is an open-source AI agent.
-			It was built by Peter Steinberger, an Austrian developer who started it as a side project
-			alongside his regular job. He released it in late January 2026.
+			OpenClaw, a tool Heisenberg spent five hours trying to install, is an open-source "AI agent."
+			It was built by an Austrian developer, Peter Steinberger, who started it as a side project
+			alongside his regular job in late January 2026.
 		</p>
 		<p>
-			The idea behind OpenClaw is conceptually simple: it does things on your behalf. It replies to
-			your emails, manages your files, browses the web, writes code. You don't need special
-			software. You just use messaging apps you already have. But to do all of that, it needs
+			The idea behind OpenClaw is conceptually simple: it does tasks on your behalf. It replies to
+			your emails, manages your files, browses the web, and even writes code. You don't need special
+			software. You give it orders using messaging apps. But to do all of that, it needs
 			something significant in return: deep, largely unsupervised access to your computer.
 		</p>
 		<p>What happened next was without precedent in the history of open-source software.</p>
 		<StarChart />
 		<p>
 			Within weeks, "lobster farming" had become cultural shorthand for the practice of configuring,
-			training, and tending to your AI agent. Communities formed on Rednote and WeChat. Tutorials
+			training, and tending numerous OpenClaw AI agents, named after the OpenClaw mascot logo. Communities 
+			formed on Chinese social media sites Rednote and WeChat. Tutorials
 			proliferated. Offline meetups appeared seemingly overnight in Shenzhen's tech parks and
 			Beijing's university districts. People traded "lobster farming techniques", how to set up
-			local knowledge bases, which model providers to trust, how to stop your lobster from being
-			dangerous.
+			local knowledge bases, which model providers to trust, and most importantly, how to stop your lobster 
+			from becoming dangerous.
 		</p>
 		<TokenModel />
 		<p>
@@ -177,12 +176,12 @@
 			infrastructure, such as Alibaba Cloud, MiniMax's own API, Zhipu AI's platform.
 		</p>
 		<p>
-			Of the top 20 models running on OpenClaw, 12 were built in China, according to OpenRouter, a
+			Of the top 20 models running on OpenClaw, 12 were built in China according to OpenRouter, a
 			service that routes AI queries across hundreds of model providers and logs every token in
 			transit.
 		</p>
 		<p>
-			Group by provider, Anthropic led all others, but the next three spots belonged to Chinese
+			Grouped by provider, Anthropic led all others, but the next three spots belonged to Chinese
 			companies.
 		</p>
 		<CompanyChart />
